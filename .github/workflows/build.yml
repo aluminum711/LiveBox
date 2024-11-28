@@ -65,7 +65,7 @@ jobs:
                   prerelease: false
                   publish: true
             - name: Upload deb bundle
-                uses: actions/upload-artifact@v3
-                with:
+              uses: actions/upload-artifact@v3
+              with:
                   name: Debian Bundle
                   path: ${{ github.workspace }}/target/release/bundle/deb/tauri_1.4_arm64.deb
